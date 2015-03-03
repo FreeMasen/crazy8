@@ -39,6 +39,7 @@ Partial Class frmCrazyEights
         Me.btnP2EndTurn = New System.Windows.Forms.Button()
         Me.lstSuits = New System.Windows.Forms.ListBox()
         Me.btnSetSuit = New System.Windows.Forms.Button()
+        Me.lstWin = New System.Windows.Forms.ListView()
         Me.SuspendLayout()
         '
         'lstP1Hand
@@ -202,6 +203,19 @@ Partial Class frmCrazyEights
         Me.btnSetSuit.UseVisualStyleBackColor = True
         Me.btnSetSuit.Visible = False
         '
+        'lstWin
+        '
+        Me.lstWin.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.lstWin.Font = New System.Drawing.Font("Bauhaus 93", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstWin.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.lstWin.Location = New System.Drawing.Point(12, 12)
+        Me.lstWin.Name = "lstWin"
+        Me.lstWin.Size = New System.Drawing.Size(891, 421)
+        Me.lstWin.TabIndex = 22
+        Me.lstWin.UseCompatibleStateImageBehavior = False
+        Me.lstWin.View = System.Windows.Forms.View.List
+        Me.lstWin.Visible = False
+        '
         'frmCrazyEights
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -224,6 +238,7 @@ Partial Class frmCrazyEights
         Me.Controls.Add(Me.lstP1Hand)
         Me.Controls.Add(Me.btnP2EndTurn)
         Me.Controls.Add(Me.btnP1EndTurn)
+        Me.Controls.Add(Me.lstWin)
         Me.Name = "frmCrazyEights"
         Me.Text = "Crazy Eights"
         Me.ResumeLayout(False)
@@ -247,5 +262,6 @@ Partial Class frmCrazyEights
     Friend WithEvents btnP2EndTurn As System.Windows.Forms.Button
     Friend WithEvents lstSuits As System.Windows.Forms.ListBox
     Friend WithEvents btnSetSuit As System.Windows.Forms.Button
+    Friend WithEvents lstWin As System.Windows.Forms.ListView
 
 End Class

@@ -2,7 +2,14 @@
     Inherits CollectionBase
 
     Public Sub Build(NewCard As Card)
-        Me.List.Add(NewCard)
+        Dim frontBack As Integer
+        If frontBack = 0 Then
+            Me.List.Insert(0, NewCard)
+            frontBack = 1
+        ElseIf frontBack = 1 Then
+            Me.List.Insert(Me.List.Count, NewCard)
+            frontBack = 0
+        End If
     End Sub
 
     Public Sub deal(deltCard As Card)
