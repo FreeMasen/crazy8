@@ -78,7 +78,7 @@
         upCard = objdeckofCards(secondIndex)
         objdeckofCards.RemoveAt(secondIndex)
         txtFaceUp.Text = upCard.ToString
-
+        'comment
         turncounter = 1
         BetweenTurns()
     End Sub
