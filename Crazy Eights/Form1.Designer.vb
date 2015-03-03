@@ -221,6 +221,7 @@ Partial Class frmCrazyEights
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1013, 553)
+        Me.Controls.Add(Me.lstWin)
         Me.Controls.Add(Me.btnSetSuit)
         Me.Controls.Add(Me.lstSuits)
         Me.Controls.Add(Me.btnStartPlayer)
@@ -232,13 +233,12 @@ Partial Class frmCrazyEights
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnP2Draw)
         Me.Controls.Add(Me.btnP2Play)
-        Me.Controls.Add(Me.btnP1Draw)
         Me.Controls.Add(Me.btnP1Play)
         Me.Controls.Add(Me.lstP2Hand)
         Me.Controls.Add(Me.lstP1Hand)
         Me.Controls.Add(Me.btnP2EndTurn)
         Me.Controls.Add(Me.btnP1EndTurn)
-        Me.Controls.Add(Me.lstWin)
+        Me.Controls.Add(Me.btnP1Draw)
         Me.Name = "frmCrazyEights"
         Me.Text = "Crazy Eights"
         Me.ResumeLayout(False)
